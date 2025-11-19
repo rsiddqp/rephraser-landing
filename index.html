@@ -197,13 +197,13 @@
                 <li class="flex gap-3">
                     <span class="flex-shrink-0 w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 font-bold">3</span>
                     <div>
-                        <strong>Important:</strong> Right-click (⌃+click) Rephraser.app → Select <strong>"Open"</strong>
-                        <div class="text-sm text-gray-500 mt-1">Don't double-click! If you see "damaged" warning, that's normal - just right-click → Open instead</div>
+                        <strong>Open the app:</strong> Right-click (⌃+click) Rephraser.app → Select <strong>"Open"</strong>
+                        <div class="text-sm text-gray-500 mt-1">First time only: macOS requires right-click for apps not from the App Store</div>
                     </div>
                 </li>
                 <li class="flex gap-3">
                     <span class="flex-shrink-0 w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 font-bold">4</span>
-                    <span>Click <strong>"Open"</strong> in the confirmation dialog</span>
+                    <span>Click <strong>"Open"</strong> when macOS asks for confirmation</span>
                 </li>
                 <li class="flex gap-3">
                     <span class="flex-shrink-0 w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 font-bold">5</span>
@@ -215,11 +215,9 @@
                 </li>
             </ol>
             
-            <div class="mt-6 p-4 bg-yellow-50 border-l-4 border-yellow-400 text-sm text-gray-700">
-                <p class="font-semibold mb-1">💡 Still seeing "damaged" error after right-clicking?</p>
-                <p class="mb-2">Open <strong>Terminal</strong> (search "Terminal" in Spotlight) and paste this command:</p>
-                <code class="block bg-gray-800 text-green-400 p-2 rounded font-mono text-xs mb-2">xattr -d com.apple.quarantine ~/Downloads/Rephraser.app</code>
-                <p class="text-xs">Then press Enter, and double-click Rephraser.app to open it. This removes the security flag that's blocking the app.</p>
+            <div class="mt-6 p-4 bg-blue-50 border-l-4 border-blue-400 text-sm text-gray-700">
+                <p class="font-semibold mb-1">✨ This app is code-signed for your security</p>
+                <p>Right-clicking → Open on first launch is a standard macOS security feature. After the first time, you can open normally!</p>
             </div>
         </div>
 
