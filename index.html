@@ -216,8 +216,10 @@
             </ol>
             
             <div class="mt-6 p-4 bg-yellow-50 border-l-4 border-yellow-400 text-sm text-gray-700">
-                <p class="font-semibold mb-1">💡 Why do I see "damaged" or "cannot be opened"?</p>
-                <p>This is a normal macOS security warning for apps not from the App Store. The app is completely safe! Just <strong>right-click → Open</strong> to bypass this warning.</p>
+                <p class="font-semibold mb-1">💡 Still seeing "damaged" error after right-clicking?</p>
+                <p class="mb-2">Open <strong>Terminal</strong> (search "Terminal" in Spotlight) and paste this command:</p>
+                <code class="block bg-gray-800 text-green-400 p-2 rounded font-mono text-xs mb-2">xattr -d com.apple.quarantine ~/Downloads/Rephraser.app</code>
+                <p class="text-xs">Then press Enter, and double-click Rephraser.app to open it. This removes the security flag that's blocking the app.</p>
             </div>
         </div>
 
